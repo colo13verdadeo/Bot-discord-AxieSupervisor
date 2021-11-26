@@ -1,0 +1,10 @@
+//Obtener canal
+const channel = member.guild.channels.cache.find(c => c.name === "welcolme-and-goodbye")
+
+
+//BORRAR TODOS LOS CANALES
+//This goes in Client.on('ready', ...);
+var server = Client.guilds.get('Your servers ID'); //Check Discord's Help For it
+for (var i = 0; i < server.channels.array().length; i++) {
+    server.channels.array()[i].delete();
+}
